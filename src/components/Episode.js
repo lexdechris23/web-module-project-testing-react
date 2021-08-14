@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Episode = (props)=> {
-    const {episode} = props;
-    const {id, image, name, season, number, summary, runtime} = episode;
-    const imgsrc = image || './stranger_things.png';
+const Episode = (props) => {
+    const { episode } = props;
+    const { id, image, name, season, number, summary, runtime } = episode;
+    const imgsrc = image || "./stranger_things.png";
+  
 
     return(<div className="episode" key={id}>
         <img className="episode-image" src={imgsrc} alt={imgsrc} />
